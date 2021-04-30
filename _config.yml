@@ -109,6 +109,7 @@ analytics:
   google:
     tracking_id: "G-N3V2DBBBGL"
     anonymize_ip: true
+bing_site_verification: "57C702EC8D799A2E710B5CBE0E42CE75"
 
 defaults:
   # _posts
