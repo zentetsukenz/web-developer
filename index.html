@@ -183,7 +183,60 @@
     
       <h1 id="page-title" class="page__title"></h1>
     
-    
+    <h1 id="introduction">Introduction</h1>
+
+<p>Building software has always been cryptic for everyone. When we see a veteran developer code, we usually see some weird text that looks like English but not typical English grammar. Some are easy to understand, and we can guess what it does.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">say_hello_to</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hello, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>However, most of the time, we usually see more complex code.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">calculate_best_vector</span><span class="p">(</span><span class="n">parameters</span> <span class="o">=</span> <span class="p">{})</span>
+  <span class="n">volumes</span> <span class="o">||=</span> <span class="n">parameters</span><span class="p">[</span><span class="ss">:volumes</span><span class="p">]</span>
+  <span class="n">distance_mapper</span> <span class="o">||=</span> <span class="n">parameters</span><span class="p">[</span><span class="ss">:distance_mapper</span><span class="p">]</span>
+
+  <span class="nb">self</span><span class="p">.</span><span class="nf">vectors</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">vector</span><span class="o">|</span> 
+    <span class="n">center</span> <span class="o">=</span> <span class="n">vector</span><span class="p">.</span><span class="nf">vector_elements</span><span class="p">.</span><span class="nf">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="n">e</span><span class="p">.</span><span class="nf">center</span> <span class="p">}.</span><span class="nf">first</span>
+    <span class="n">surrounds</span> <span class="o">=</span> <span class="n">initialize_surrounding</span><span class="p">(</span><span class="n">vector</span><span class="p">.</span><span class="nf">vector_elements</span><span class="p">,</span> <span class="n">center</span><span class="p">)</span>
+
+    <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">surroundings</span>
+      <span class="n">volume</span> <span class="o">=</span> <span class="n">surroudings</span><span class="p">[</span><span class="n">index</span><span class="p">].</span><span class="nf">capacity</span> <span class="o">-</span> <span class="n">center</span><span class="p">.</span><span class="nf">volume</span>
+      <span class="c1"># snip ....</span>
+      <span class="c1"># this is too complex ....</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>To understand the code above, we will need to understand at least two things, syntax (a.k.a. a programming language grammar) and context (the problem that the code is trying to solve).</p>
+
+<h1 id="programming-concepts">Programming concepts</h1>
+
+<p>Programming is a tool we can use to achieve a goal. There are many steps involved, many programming concepts, and many other technologies order than coding to craft one beautiful application.</p>
+
+<p>This handbook will contain the necessary tools, concepts, and techniques necessary for anyone who wants to build an application. From the starter concept, write the first program to an advanced concept used in an enormous application.</p>
+
+<h1 id="handbook">Handbook</h1>
+
+<p>There are four sections in this handbook, starter, basic, intermediate, and advance. Each section contains four categories, toolings, programming concepts, techniques, and deployment.</p>
+
+<p>Since this handbook focuses on a Web Developer, all contents inside will be revolving around building a customized web application suit to a particular problem.</p>
+
+<p>Please note that there are already many solutions on the internet that can already solve some problems. For example, to build Web Content, there is a solution called CMS, Content Management System, which revolves around building a post and allowing users to comment. E-commerce, there are also many free and open-source e-commerce platforms waiting for anyone to grab and build their e-commerce website.</p>
+
+<p>These are some of the tools that are already available on the internet. Many tools can already solve some common problems. However, if the goal is to build something new that those tools cannot do their job. This handbook will help anyone who wants to start programming, build something special, and start their software development journey.</p>
+
+<p>Lastly, the author hopes that this handbook will help everyone achieve their goal.</p>
+
+<p>Good luck, and happy coding 🎉</p>
+
+<h1 id="epilogue">Epilogue</h1>
+
+<p>Feel free to post questions <a href="https://github.com/zentetsukenz/web-developer/issues">here</a> whether there is already a solution for a specific problem or not. Feedback, improvement, and contribution are also very welcome.</p>
+
+<p>Let us get started!</p>
 
 
 <h3 class="archive__subtitle">Recent Posts</h3>
